@@ -1,0 +1,770 @@
+[
+  {
+    "Sol Badguy": {
+      "commandNormals": {
+        "Command Normal 1": "6P",
+        "Command Normal 2": "6S",
+        "Command Normal 3": "6H"
+      },
+      "specials": {
+        "Gun Flame": "236P",
+        "Gun Flame (Feint)": "214P",
+        "Volcanic Viper": [
+          "623S",
+          "623H",
+          "j.623S",
+          "j.623H"
+        ],
+        "Bandit Revolver": [
+          "236K",
+          "j.236K"
+        ],
+        "Wild Throw": [
+          "623K",
+          "j.623K"
+        ],
+        "Night Raid Vortex": "214S",
+        "Fafnir": "41236H"
+      },
+      "overdrives": {
+        "Tyrant Rave": "632146H",
+        "Heavy Mob Cemetery": "214214H"
+      },
+      "holdable_moves": [
+        "Night Raid Vortex"
+      ]
+    }
+  },
+  {
+    "Ky Kiske": {
+      "commandNormals": {
+        "Command Normal 1": "6P",
+        "Command Normal 2": "6K",
+        "Command Normal 3": "6H"
+      },
+      "specials": {
+        "Stun Edge": "236S",
+        "Charged Stun Edge": "236H",
+        "Aerial Stun Edge": [
+          "j.623S",
+          "j.623H"
+        ],
+        "Stun Dipper": "236K",
+        "Foudre Arc": "214K",
+        "Vapor Thrust": [
+          "623S",
+          "623H",
+          "j.623S",
+          "j.623H"
+        ],
+        "Dire Eclat": "214S"
+      },
+      "overdrives": {
+        "Ride the Lightning": [
+          "632146H",
+          "j.632146H"
+        ],
+        "Sacred Edge": "214214P",
+        "Dragon Install": "214214H"
+      }
+    }
+  },
+  {
+    "May": {
+      "commandNormals": {
+        "Command Normal 1": "6P",
+        "Command Normal 2": "6K",
+        "Command Normal 3": "3K",
+        "Command Normal 4": "6H",
+        "Command Normal 5": [
+          "2H",
+          "j.2H"
+        ]
+      },
+      "specials": {
+        "Mr. Dolphin (Horizontal)": [
+          "[4]6S",
+          "[4]6H"
+        ],
+        "Mr. Dolphin (Vertical)": [
+          "[2]8S",
+          "[2]8H"
+        ],
+        "Overhead Kiss": "623K",
+        "Arisugawa Sparkle": [
+          "214K",
+          "214P"
+        ]
+      },
+      "overdrives": {
+        "Great Yamada Attack": "236236S",
+        "The Wonderful and Dynamic Goshogawara": [
+          "632146H",
+          "j.632146H"
+        ]
+      },
+      "holdable_moves": [
+        "Command Normal 4"
+      ]
+    }
+  },
+  {
+    "Axl Low": {
+      "commandNormals": {
+        "Command Normal 1": "6P",
+        "Command Normal 2": "6K",
+        "Command Normal 3": "6H"
+      },
+      "specials": {
+        "Sickle Slash": {
+          "input": "[4]6S",
+          "followups": {
+            "Soaring Chain Strike": "8",
+            "Spinning Chain Strike": "2",
+            "Winter Cherry": "5S"
+          }
+        },
+        "Winter Mantis": "41236H",
+        "Snail": [
+          "214H",
+          "j.214H"
+        ],
+        "Rainwater": "214S",
+        "Axl Bomber": "j.236H"
+      },
+      "overdrives": {
+        "Sickle Storm": "236236H",
+        "One Vision": "632146P"
+      }
+    }
+  },
+  {
+    "Chip Zanuff": {
+      "commandNormals": {
+        "Command Normal 1": "6P",
+        "Command Normal 2": "6K",
+        "Command Normal 3": "6H",
+        "Command Normal 4": "j.2K"
+      },
+      "specials": {
+        "Alpha Blade (Horizontal)": [
+          "236P",
+          "j.236P"
+        ],
+        "Alpha Blade (Diagonal)": [
+          "236K",
+          "j.236K"
+        ],
+        "Beta Blade": [
+          "623S",
+          "j.623S"
+        ],
+        "Gamma Blade": "236H",
+        "Resshou": {
+          "input": "236S",
+          "followups": {
+            "Rokusai": {
+              "input": "236S",
+              "followups": {
+                "Senshuu": "236K"
+              }
+            }
+          }
+        },
+        "Genrouzan": "63214S",
+        "Wall Run": {
+          "input": "66WR",
+          "followups": {
+            "Wall Run Attack": [
+              "w.5S",
+              "w.5K",
+              "w.5P",
+              "w.5H",
+              "w.6H"
+            ],
+            "Escape": [
+              "w.4",
+              "w.2"
+            ]
+          }
+        }
+      },
+      "overdrives": {
+        "Zansei Rouga": [
+          "632146H",
+          "j.632146H"
+        ],
+        "Banki Messai": "236236P"
+      }
+    }
+  },
+  {
+    "Potemkin": {
+      "commandNormals": {
+        "Command Normal 1": "6P",
+        "Command Normal 2": "6K",
+        "Command Normal 3": "6H"
+      },
+      "specials": {
+        "Potemkin Buster": "632146P",
+        "Heat Knuckle": "623H",
+        "Mega Fist (Forward)": "236P",
+        "Mega Fist (Backward)": "214P",
+        "Slide Head": "236S",
+        "Hammer Fall": {
+          "input": "[4]6H",
+          "followups": {
+            "Hammer Fall Break": "5P"
+          }
+        },
+        "F.D.B": "63214S",
+        "Garuda Impact": "214H"
+      },
+      "overdrives": {
+        "Heavenly Potemkin Buster": "236236S",
+        "Giganter Kai": "632146H"
+      },
+      "holdable_moves": [
+        "F.D.B"
+      ]
+    }
+  },
+  {
+    "Faust": {
+      "commandNormals": {
+        "Command Movement": [
+          "1",
+          "3"
+        ],
+        "Command Normal 1": "6P",
+        "Command Normal 2": "6H",
+        "Command Normal 3": "5HH",
+        "Command Normal 4": "2K",
+        "Command Normal 5": "[5]D"
+      },
+      "specials": {
+        "Mix Mix Mix": [
+          "236S",
+          "j.236S"
+        ],
+        "What Could This Be?": "236P",
+        "Snip Snip Snip": "236H",
+        "Scarecrow": [
+          "214P",
+          "214K",
+          "214S"
+        ],
+        "Thrust": {
+          "input": "41236K",
+          "followups": {
+            "Pull Back": {
+              "input": "4",
+              "followups": {
+                "Hole in One!": "5H"
+              }
+            }
+          }
+        },
+        "Love": "j.236P"
+      },
+      "overdrives": {
+        "Bone-crushing Excitement": "632146H",
+        "W-W-What Could This Be?": "236236P"
+      }
+    }
+  },
+  {
+    "Millia Rage": {
+      "commandNormals": {
+        "Command Normal 1": "6P",
+        "Command Normal 2": "6K",
+        "Command Normal 3": "6H"
+      },
+      "specials": {
+        "Bad Moon": "j.236P",
+        "Turbo Fall": "j.236K",
+        "Tandem Top": [
+          "236S",
+          "236H"
+        ],
+        "Iron Savior": "214P",
+        "Mirazh": "214K",
+        "Lust Shaker": "214S",
+        "Kapel": "j.236H"
+      },
+      "overdrives": {
+        "Winger": "632146H",
+        "Septem Voices": "236236S"
+      },
+      "mashable_moves": [
+        "Lust Shaker"
+      ]
+    }
+  },
+  {
+    "Zato-1": {
+      "commandNormals": {
+        "Command Normal 1": "6P",
+        "Command Normal 2": "6K",
+        "Command Normal 3": "6H"
+      },
+      "specialAttacks": {
+        "Flight": "88",
+        "Summon Eddie": "214H",
+        "'Pierce'": "236P",
+        "'That's A lot!'": "236K",
+        "'Leap'": "236S",
+        "'Oppose'": "236H",
+        "Invite Hell": "22H",
+        "Break the Law": "214K",
+        "Damned Fang": "623S",
+        "Drunkard Shade": "214S"
+      },
+      "overdrives": {
+        "Amorphous": "632146H",
+        "Sun Void": "632146S"
+      }
+    }
+  },
+  {
+    "Ramlethal Valentine": {
+      "commandNormals": {
+        "Command Normal 1": "6P",
+        "Command Normal 2": "6H"
+      },
+      "specials": {
+        "Bajoneto": [
+          "236S",
+          "236H"
+        ],
+        "Dauro": "623P",
+        "Slido Detruo": [
+          "214K",
+          "j.214K"
+        ],
+        "Sabrobato": "214H",
+        "Erarlumo": "214P",
+        "Agresa Ordono": "j.214S"
+      },
+      "overdrives": {
+        "Calvados": "632146H",
+        "Mortobato": "236236S"
+      }
+    }
+  },
+  {
+    "Leo Whitefang": {
+      "commandNormals": {
+        "Command Normal 1": "6P",
+        "Command Normal 2": "6K",
+        "Command Normal 3": "6H",
+        "Command Normal 4": [
+          "[f.S]",
+          "[f.H]"
+        ],
+        "Command Normal 5": [
+          "5H[f.S]",
+          "5S[5H]"
+        ]
+      },
+      "specials": {
+        "Gravierte Würde": [
+          "[4]6S",
+          "[4]6H"
+        ],
+        "Eisensturm": [
+          "[2]8S",
+          "[2]8H"
+        ],
+        "Erstes Kaltes Gestöber": "236S",
+        "Zweites Kaltes Gestöber": "236H",
+        "Turbulenz": "214S",
+        "Kahn-Schild": "kh.D",
+        "Glänzendes Dunkel": "kh.214K",
+        "Blitzschlag": "kh.214H",
+        "Cancel": "kh.22"
+      },
+      "overdrives": {
+        "Stahlwirbel": "632146S",
+        "Leidenschaft des Dirigenten": "632146H"
+      },
+      "holdable_moves": [
+        "Turbulenz",
+        "Glänzendes Dunkel",
+        "Blitzschlag"
+      ]
+    }
+  },
+  {
+    "Nagoriyuki": {
+      "commandNormals": {
+        "Command Normal 1": "6P",
+        "Command Normal 2": "6K",
+        "Command Normal 3": "6H",
+        "Command Normal 4": "f.SS",
+        "Command Normal 5": "f.SSS"
+      },
+      "specials": {
+        "Zarameyuki": "236S",
+        "Kamuriyuki": "214H",
+        "Shizuriyuki": "623H",
+        "Bloodsucking Universe": "623P",
+        "Fukyo": [
+          "214K",
+          "236K"
+        ]
+      },
+      "overdrives": {
+        "Wasureyuki": "632146S",
+        "Zansetsu": "br.632146H"
+      }
+    }
+  },
+  {
+    "Giovanna": {
+      "commandNormals": {
+        "Command Normal 1": "6P",
+        "Command Normal 2": "6H"
+      },
+      "specials": {
+        "Sepultura": "214K",
+        "Trovāo": "236K",
+        "Sol Nascente": "623S",
+        "Sol Poente": [
+          "214S",
+          "j.214S"
+        ]
+      },
+      "overdrives": {
+        "Ventania": "632146H",
+        "Tempestade": "j.236236H"
+      }
+    }
+  },
+  {
+    "Anji Mito": {
+      "commandNormals": {
+        "Command Normal 1": "6P",
+        "Command Normal 2": "6H"
+      },
+      "specials": {
+        "Shitsu": "236P",
+        "Fuujin": {
+          "input": "236H",
+          "followups": {
+            "Shin: Ichishiki": "5P",
+            "Issokutobi": "5K",
+            "Nagiha": "5S",
+            "Rin": "5H"
+          }
+        },
+        "Kou": "236S",
+        "Suigetsu No Hakobi": "236K"
+      },
+      "overdrives": {
+        "Issei Ougi: Sai": "632146H",
+        "Kachoufuugetsu Kai": "632146S"
+      },
+      "holdable_moves": [
+        "Fuujin",
+        "Kou",
+        "Suigetsu No Hakobi"
+      ]
+    }
+  },
+  {
+    "I-No": {
+      "commandNormals": {
+        "Command Normal 1": "6P",
+        "Command Normal 2": "6H"
+      },
+      "specials": {
+        "Antidepressant Scale": [
+          "214P",
+          "j.214P"
+        ],
+        "Chemical Love": [
+          "214K",
+          "j.214K"
+        ],
+        "Stroke the Big Tree": [
+          "236S",
+          "236H"
+        ],
+        "Sultry Performance": [
+          "j.236K",
+          "j.236S",
+          "j.236H"
+        ]
+      },
+      "overdrives": {
+        "Megalomania": "632146H",
+        "Ultimate Fortissimo": [
+          "632146S",
+          "j.632146S"
+        ]
+      },
+      "holdable_moves": "Sultry Performance"
+    }
+  },
+  {
+    "Goldlewis Dickinson": {
+      "commandNormals": {
+        "Command Normal 1": "6P",
+        "Command Normal 2": "6H"
+      },
+      "specials": {
+        "Behemnoth Typhoon": [
+          "41236H",
+          "63214H",
+          "23698H",
+          "89632H",
+          "21478H",
+          "87412H",
+          "47896H",
+          "69874H"
+        ],
+        "Behemnoth Typhoon (Mid Air)": [
+          "j.41236H",
+          "j.63214H",
+          "j.23698H",
+          "j.89632H",
+          "j.21478H",
+          "j.87412H",
+          "j.47896H",
+          "j.69874H"
+        ],
+        "Thunderbird": "214S",
+        "Skyfish": "236S"
+      },
+      "overdrives": {
+        "Down With The System": "632146P",
+        "Burn It Down": "236236K"
+      }
+    }
+  },
+  {
+    "Jack-O": {
+      "commandNormals": {
+        "Command Normal 1": "6P",
+        "Command Normal 2": "6H"
+      },
+      "specials": {
+        "Summon Servant": "236P",
+        "Pick Up Servant": {
+          "input": "2P",
+          "followups": {
+            "Throw Servant": [
+              "6H",
+              "6P",
+              "6K",
+              "6S",
+              "6D"
+            ],
+            "Release Servant": [
+              "j.D",
+              "5D"
+            ]
+          }
+        },
+        "Recover": [
+          "214P",
+          "j.214P"
+        ],
+        "Attack Command": [
+          "214K",
+          "j.214K"
+        ],
+        "Defend Command": [
+          "214S",
+          "j.214S"
+        ],
+        "Countdown": [
+          "214H, j.214H"
+        ],
+        "Servant Shoot": [
+          "236K",
+          "j.236K"
+        ]
+      },
+      "overdrives": {
+        "Firever Elysion Driver": "632146P",
+        "Cheer Servant On": [
+          "236236S",
+          "236236H"
+        ]
+      }
+    }
+  },
+  {
+    "Happy Chaos": {
+      "commandNormals": {
+        "Command Normal 1": "6P",
+        "Command Normal 2": "6K",
+        "Command Normal 3": "6S",
+        "Command Normal 4": "j.2K"
+      },
+      "specials": {
+        "At the Ready": [
+          "5H",
+          "236S"
+        ],
+        "Fire": "g.5H",
+        "Steady Aim": "214S",
+        "Cancel Aim": "g.2H",
+        "Reload": "22P",
+        "Focus": "214P",
+        "Roll": "214K",
+        "Scapegoat": "236K",
+        "Curse": "236P"
+      },
+      "overdrives": {
+        "Deus Ex Machina": "632146S",
+        "Super Focus": "214214P"
+      }
+    }
+  },
+  {
+    "Baiken": {
+      "commandNormals": {
+        "Command Normal 1": "6P",
+        "Command Normal 2": "6K",
+        "Command Normal 3": "6H",
+        "Ground Throw": [
+          "4D",
+          "6D"
+        ]
+      },
+      "specials": {
+        "Tatami Gaeshi": [
+          "236K",
+          "j.236K"
+        ],
+        "Kabari": [
+          "41236S",
+          "41236H"
+        ],
+        "Youzansen": "j.236S",
+        "Hiiragi": "236P"
+      },
+      "overdrives": {
+        "Tsurane Sanzu-watashi": "236236S",
+        "Kenjyu": [
+          "214214P",
+          "j.214214P"
+        ]
+      },
+      "holdable_moves": [
+        "Ground Throw"
+      ]
+    }
+  },
+  {
+    "Testament": {
+      "commandNormals": {
+        "Command Normal 1": "6P",
+        "Command Normal 2": "6H"
+      },
+      "specials": {
+        "Grave Reaper": [
+          "236S",
+          "236H",
+          "j.236S",
+          "j.236H"
+        ],
+        "Unholy Diver": "214P",
+        "Possession": [
+          "214K",
+          "j.214K"
+        ],
+        "Arbiter Sign": [
+          "214S",
+          "214H"
+        ]
+      },
+      "overdrives": {
+        "Nostrovia": "236236P",
+        "Calamity One": "236236K"
+      },
+      "holdable_moves": "Greave Reaper"
+    }
+  },
+  {
+    "Bridget": {
+      "commandNormals": {
+        "Command Normal 1": "6P",
+        "Command Normal 2": "6K",
+        "Command Normal 3": "6H",
+        "Command Normal 4": [
+          "5S[f.S]",
+          "5S[2S]"
+        ],
+        "Command Normal 5": [
+          "5HH",
+          "5H[2H]"
+        ]
+      },
+      "specials": {
+        "Stop and Dash": [
+          "214S",
+          "214H",
+          "236H",
+          "236S",
+          "j.214S",
+          "j.214H",
+          "j.236H",
+          "j.236S"
+        ],
+        "Rolling Movement": [
+          "214K",
+          "j.214K"
+        ],
+        "Starship": "623P",
+        "Kick Start My Heart": {
+          "input": "236K",
+          "followups": {
+            "Break": "5P",
+            "Shoot": "5K"
+          }
+        },
+        "Roger Dive": "j.236K",
+        "Rock the Baby": [
+          "63214P",
+          "j.63214P"
+        ]
+      },
+      "overdrives": {
+        "Loop the Loop": "632146S",
+        "Return of the Killing Machine": [
+          "632146H",
+          "j.632146H"
+        ]
+      }
+    }
+  },
+  {
+    "Sin Kiske": {
+      "commandNormals": {
+        "Command Normal 1": "6P",
+        "Command Normal 2": "6K",
+        "Command Normal 3": "6H"
+      },
+      "specials": {
+        "Beak Driver": "236H",
+        "Hawk Baker": "623S",
+        "Hoof Stomp": "214S",
+        "Elk Hunt": "236K",
+        "Gazelle Step": "sp.66",
+        "Still Growing": "63214P"
+      },
+      "overdrives": {
+        "R.T.L": [
+          "632146H",
+          "j.632146H"
+        ],
+        "Tyrant Barrel": "236236P"
+      }
+    }
+  }
+]
+
