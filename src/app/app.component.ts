@@ -14,22 +14,31 @@ export class AppComponent implements OnInit {
   translations: any;
   combo: string = '';
   combo_list: Array<string> = [];
+  realComboList: any = [];
+
 
   // This portion is for translating the input
   translateInput() {
-    for (let i = 0; i < this.combo_list.length; i++) {
-      this.combo_list[i] = this.combo_list[i].trim();
-      let input = this.translations[this.combo_list[i]];
+    for (let i = 0; i < this.realComboList.length; i++) {
+      let input = this.translations[this.realComboList[i]];
       if (input !== undefined) {
-        this.combo_list[i] = this.translations[this.combo_list[i]];
+        this.realComboList[i][0] = [this.translations[this.realComboList[i][0]]];
       }
     }
   }
 
   processChange() {
     this.combo_list = this.combo.split('>')
+    for (let i = 0; i < this.combo_list.length; i++) {
+      // This is to reset the list because im using .push()
+      this.realComboList = []
+      // Remove the unnecessary characters from the input
+      this.combo_list[i] = this.combo_list[i].trim();
+      console.log(this.combo_list);
+      this.realComboList.push([[this.combo_list[i]]]);
+    }
     this.translateInput();
-    console.log(this.combo_list);
+    console.log(this.realComboList);
   }
 
   async ngOnInit() {

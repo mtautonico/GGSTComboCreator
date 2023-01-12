@@ -2,9 +2,15 @@
   <h1>Combo:</h1>
   <input type="text" [(ngModel)]="combo" (ngModelChange)="processChange()"/>
   <br/>
-  <div *ngFor="let input of combo_list">
-    <div *ngIf="input.includes('images'); else noImage">
-      <img class="image" [src]='input' [alt]=''>
+  <div *ngFor="let input of realComboList">
+    <div *ngIf="input[0][0].includes('images'); else noImage">
+      <div *ngIf="input[0].length > 1; else oneImage">
+        <img [src]="input[0]" alt="">
+        <img [src]="input[0]" alt="">
+      </div>
+      <ng-template #oneImage>
+        <img class="image" [src]='input[0][0]' [alt]=''>
+      </ng-template>
     </div>
     <ng-template #noImage>
       <span>{{input}}</span>
