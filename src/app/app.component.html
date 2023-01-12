@@ -1,10 +1,13 @@
 <div>
   <h1>Combo:</h1>
   <input type="text" [(ngModel)]="combo" (ngModelChange)="processChange()"/>
-<!--  <input type="text" [(ngModel)]="combo"/>-->
   <br/>
-  <span>{{combo_list}}</span>
-  <br/>
-
-  <span>{{combo}}</span>
+  <div *ngFor="let input of combo_list">
+    <div *ngIf="input.includes('images'); else noImage">
+      <img class="image" [src]='input' [alt]=''>
+    </div>
+    <ng-template #noImage>
+      <span>{{input}}</span>
+    </ng-template>
+  </div>
 </div>
