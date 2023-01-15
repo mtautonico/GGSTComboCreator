@@ -7,4 +7,7 @@ export class ProcessInputService {
   constructor() {
   }
 
+  processInput(input: string, translations: any) {
+
+  }
 }
