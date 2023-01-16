@@ -3,14 +3,6 @@
   <input type="text" [(ngModel)]="userInput" (ngModelChange)="processInput()"/>
   <br/>
   <div *ngFor="let input of processedUserInput">
-    <div *ngIf="getArrayLength(input) === 1; else multiInput">
-      <img [src]="input[0]" [alt]="input[0]">
-    </div>
-    <ng-template #multiInput>
-      <div>
-        <img [src]="input[0]" [alt]="input[0]">
-        <img [src]="input[1]" [alt]="input[1]">
-      </div>
-    </ng-template>
+    <img *ngFor="let icon of input" [src]="icon" [alt]="icon"/>
   </div>
 </div>
