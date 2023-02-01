@@ -28,13 +28,10 @@ export class AppComponent implements OnInit {
       let payload = [];
       let attack: string;
       let aerial: boolean = false;
-      if (this.attackInputs.includes(input.charAt(input.length - 1).toUpperCase())) {
-        payload.push(this.translations[input.slice(0, -1)]);
-        payload.push(this.translations[input.charAt(input.length - 1).toUpperCase()]);
-      } else if (this.translations[input] !== undefined) {
+      if (this.translations[input] !== undefined) {
         payload.push(this.translations[input]);
       } else {
-        if (input.length === 6 || input.length === 7) {
+        if (input.length >= 6) {
           if (this.attackInputs.includes(input.charAt(input.length - 1).toUpperCase())) {
             attack = input.charAt(input.length - 1).toUpperCase();
             input = input.slice(0, -1);
