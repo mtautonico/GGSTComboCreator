@@ -20,6 +20,10 @@ export class AppComponent implements OnInit {
     return array.length;
   }
 
+  checkSubstring(input: string, substring: string) {
+    return input.includes(substring);
+  }
+
   processInput() {
     let splitInput = this.userInput.split('>')
     this.processedUserInput = [];
@@ -28,18 +32,22 @@ export class AppComponent implements OnInit {
       let payload = [];
       let attack: string;
       let aerial: boolean = false;
+      if (this.attackInputs.includes(input.charAt(input.length - 1).toUpperCase()) && input.length > 1) {
+        attack = input.charAt(input.length - 1).toUpperCase();
+        payload.push(this.translations[attack]);
+      }
+      if (input.charAt(0).toLowerCase() + input.charAt(1).toLowerCase() === 'j.') {
+        aerial = true;
+        input = input.slice(2);
+      }
       if (this.translations[input] !== undefined) {
         payload.push(this.translations[input]);
+        if (this.attackInputs.includes(input.charAt(input.length - 1).toUpperCase()) && input.length > 1) {
+          // @ts-ignore
+          payload.push(this.translations[attack])
+        }
       } else {
         if (input.length >= 6) {
-          if (this.attackInputs.includes(input.charAt(input.length - 1).toUpperCase())) {
-            attack = input.charAt(input.length - 1).toUpperCase();
-            input = input.slice(0, -1);
-          }
-          if (input.charAt(0).toLowerCase() + input.charAt(1).toLowerCase() === 'j.') {
-            aerial = true;
-            input = input.slice(2);
-          }
           switch (input) {
             // TODO: Fix undefined error when adding an attack
             case '632146':
