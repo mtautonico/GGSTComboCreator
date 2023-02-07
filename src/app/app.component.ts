@@ -16,13 +16,6 @@ export class AppComponent implements OnInit {
   processedUserInput: [] = [];
   attackInputs: Array<string> = ['H', 'S', 'P', 'K', 'D']
 
-  getArrayLength(array: Array<any>) {
-    return array.length;
-  }
-
-  checkSubstring(input: string, substring: string) {
-    return input.includes(substring);
-  }
 
   processInput() {
     let splitInput = this.userInput.split('>')
@@ -30,58 +23,56 @@ export class AppComponent implements OnInit {
     for (let i = 0; i < splitInput.length; i++) {
       let input = splitInput[i].trim();
       let payload = [];
+      // Separates the attack input if present from the rest of the input
       let attack: string;
-      let aerial: boolean = false;
-      if (this.attackInputs.includes(input.charAt(input.length - 1).toUpperCase()) && input.length > 1) {
+      if (this.attackInputs.includes(input.charAt(input.length - 1).toUpperCase()) && input.length > 1 && input.length < 8) {
         attack = input.charAt(input.length - 1).toUpperCase();
-        payload.push(this.translations[attack]);
+        input = input.slice(0, input.length - 1);
       }
+      // Checks if the input is an aerial
+      let aerial: boolean = false;
       if (input.charAt(0).toLowerCase() + input.charAt(1).toLowerCase() === 'j.') {
         aerial = true;
         input = input.slice(2);
       }
-      if (this.translations[input] !== undefined) {
-        payload.push(this.translations[input]);
-        if (this.attackInputs.includes(input.charAt(input.length - 1).toUpperCase()) && input.length > 1) {
-          // @ts-ignore
-          payload.push(this.translations[attack])
-        }
-      } else {
-        if (input.length >= 6) {
-          switch (input) {
-            // TODO: Fix undefined error when adding an attack
-            case '632146':
-              payload.push(this.translations['63214']);
-              payload.push(this.translations['6']);
-              // @ts-ignore
-              if (attack !== '') {
-                // @ts-ignore
-                payload.push(this.translations[attack])
-              }
-              break;
-            case '236236':
-              payload.push(this.translations['236']);
-              payload.push(this.translations['236']);
-              // @ts-ignore
-              if (attack !== '') {
-                // @ts-ignore
-                payload.push(this.translations[attack])
-              }
-              break;
-            case '214214':
-              payload.push(this.translations['214']);
-              payload.push(this.translations['214']);
-              // @ts-ignore
-              if (attack !== '') {
-                // @ts-ignore
-                payload.push(this.translations[attack])
-                break;
-              }
+      // Checks the inputs for special cases
+      switch (input) {
+        case '632146':
+          payload.push(this.translations['63214']);
+          payload.push(this.translations['6']);
+          break
+        case '236236':
+          payload.push(this.translations['236']);
+          payload.push(this.translations['236']);
+          break
+        case '214214':
+          payload.push(this.translations['214']);
+          payload.push(this.translations['214']);
+          break
+        case '66':
+          payload.push(this.translations['6']);
+          payload.push(this.translations['6']);
+          break
+        default:
+          if (this.translations[input] !== undefined) {
+            payload.push(this.translations[input]);
+          } else {
+            payload.push(input)
           }
+          break
+      }
+      // Adds the attack input if present
+      // @ts-ignore
+      if (attack != null) {
+        // Adds the attack icon if the previous portion of the payload is a valid input
+        if (payload[0].includes('.png')) {
+          payload.push(this.translations[attack]);
+        // Adds the attack input if the previous portion of the payload is not an input
         } else {
-          payload.push(input);
+          payload.push(attack)
         }
       }
+      // Pushes the payload for the html to read
       // @ts-ignore
       this.processedUserInput.push(payload);
     }

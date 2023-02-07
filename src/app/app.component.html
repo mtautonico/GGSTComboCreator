@@ -3,8 +3,8 @@
   <input type="text" [(ngModel)]="userInput" (ngModelChange)="processInput()"/>
   <br/>
   <div *ngFor="let input of processedUserInput">
-    <div *ngFor="let icon of input">
-      <div *ngIf="checkSubstring(icon, '.png'); else noImage">
+    <div class='input' *ngFor="let icon of input">
+      <div *ngIf="icon.includes('.png'); else noImage">
         <img [src]="icon"/>
       </div>
       <ng-template #noImage>
