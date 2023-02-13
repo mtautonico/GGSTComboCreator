@@ -417,7 +417,10 @@
       "overdrives": {
         "Wasureyuki": "632146S",
         "Zansetsu": "br.632146H"
-      }
+      },
+      "multipress_moves": [
+        "f.S"
+      ]
     }
   },
   {
@@ -438,7 +441,10 @@
       "overdrives": {
         "Ventania": "632146H",
         "Tempestade": "j.236236H"
-      }
+      },
+      "multipress_moves": [
+        "6H"
+      ]
     }
   },
   {
