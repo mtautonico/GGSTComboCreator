@@ -295,10 +295,7 @@
       "overdrives": {
         "Winger": "632146H",
         "Septem Voices": "236236S"
-      },
-      "mashable_moves": [
-        "Lust Shaker"
-      ]
+      }
     }
   },
   {
@@ -309,7 +306,6 @@
         "Command Normal 3": "6H"
       },
       "specialAttacks": {
-        "Flight": "88",
         "Summon Eddie": "214H",
         "'Pierce'": "236P",
         "'That's A lot!'": "236K",
